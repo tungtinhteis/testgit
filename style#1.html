@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>test css mennu dropdown</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		body{
+			font-family: sans-serif;
+			color:#333;
+		}
+		#menu ul{
+			background: #8AD385;
+			list-style-type: none;
+			text-align: center;
+		}
+		#menu ul li{
+			display: inline-table;
+			width: 120px;
+			height: 40px;
+			line-height: 40px;
+			position: relative;
+		}
+		#menu ul li a{
+			color: #f1f1f1;
+			text-decoration:none;
+			display: block;
+		}
+		#menu ul li a:hover{
+			color: #8ad385;
+			background: #f1f1f1;
+		}
+		#menu ul li>.submenu{
+			display: none;
+			position: absolute;
+		}
+		#menu ul li:hover >.submenu{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div id="menu">
+		<ul>
+			<li><a href="#">Trang chủ</a></li>
+			<li>
+				<a href="#">Diễn đàn</a>
+				<ul class="submenu">
+					<li><a href="#">Windows</a></li>
+					<li><a href="#">MacOS</a></li>
+					<li><a href="#">Linux</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Tin Tức</a></li>
+			<li><a href="#">Liên hệ</a></li>
+		</ul>
+	</div>
+</body>
+</html>
